@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product card</title>
+    <script src="https://kit.fontawesome.com/f3186485ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <article class="product__card">
+            <picture>
+                <div class="color-code">
+                    <p>RT34FY</p>
+                </div>
+                <img src="Sofa.jpg" alt="sofa" />
+
+                <div class="type"></div>
+                <div class="type"></div>
+                <div class="type"></div>
+            </picture>
+
+            <div class="product__content">
+                <p class="category">chairs</p>
+                <h1>modern yellow chair</h1>
+                <p class="seller">Tinner's house</p>
+                <div class="price & rating">
+                    <div class="price">
+                        <p class="original__price">
+                            <s>$560</s>
+                        </p>
+                        <p class="current__price">$420</p>
+                    </div>
+                    <div class="rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <section class="tabs">
+                    <p>description</p>
+                    <p>details</p>
+                    <p>comments</p>
+                </section>
+                <section class="amount">
+                    <div class="color">
+                        <p>color</p>
+                        <div class="color-shcheme">
+                            <div></div>
+                            <button>
+                                <i class="fa-solid fa-caret-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <p>quantity</p>
+                        <div class="quantity-amount">
+                            <div></div>
+                            <button>-</button>
+                            <p>2</p>
+                            <button>+</button>
+                        </div>
+                    </div>
+                    <div class="total_price">
+                        <p>total price</p>
+                        <div class="amount per quantity">
+                            <p>$840</p>
+                        </div>
+                </section>
+
+                <button class="button">add to wishlist</button>
+                <button class="button">add to cart</button>
+
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
