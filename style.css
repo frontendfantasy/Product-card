@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --primary-clr:#01f3f3;
-    --secondary-clr:#afaeaeaf;
-    --bg-primary:#77D9D9;
-    --bg-secondary:#232426;
+
+:root {
+    --primary-clr: #01f3f3;
+    --secondary-clr: #afaeaeaf;
+    --bg-primary: #77D9D9;
+    --bg-secondary: #232426;
 }
 
 body {
@@ -16,10 +17,10 @@ body {
     width: 100%;
     height: 100vh;
     color: white;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,19 +28,19 @@ main{
     width: 100vw;
 }
 
-.product__card{
+.product__card {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
 
-.product__card > img{
+.product__card>img {
     position: relative;
     min-height: 100vh;
     z-index: 1;
 }
 
-.color-code > p{
+.color-code>p {
     position: absolute;
     border: 1px solid var(--secondary-clr);
     border-radius: 5px;
@@ -50,87 +51,126 @@ main{
     z-index: 2;
 }
 
-.types{
+.types {
     color: #f30101;
     height: 20%;
     width: 20%;
     z-index: 2;
 }
 
-.product__content{
+.product__content {
     background: var(--bg-secondary);
     padding: 20px;
     display: inline-flex;
     flex-direction: column;
     gap: 20px;
 }
-.category{
+
+.category {
     color: var(--primary-clr);
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
 }
-h1{
+
+h1 {
     text-transform: capitalize;
 }
-.seller{
+
+.seller {
     font-style: italic;
     color: var(--secondary-clr);
 }
 
-.price-and-rating{
+.price-and-rating {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.price{
+.price {
     display: inline-flex;
     align-items: center;
     gap: 7px;
 }
 
-.current__price{
+.current__price {
     font-size: 1.6rem;
 }
 
-.original__price{
+.original__price {
     font-size: .8rem;
     color: var(--secondary-clr);
 }
 
-.rating:is(:hover, :focus){
+.rating:is(:hover, :focus) {
     color: var(--primary-clr);
     cursor: pointer;
 }
 
-.tabs, .amount{
+.tabs,
+.amount {
     display: inline-flex;
     gap: 20px;
     text-transform: uppercase;
     font-size: .8em;
 }
 
-.tabs > p{
+.description {
+    /* border-bottom: 3px solid var(--secondary-clr); */
+    /* text-decoration: none; */
+    /* color: white; */
+    width: 30%;
+}
+
+.description > a {
     border-bottom: 3px solid var(--secondary-clr);
+    text-decoration: none;
+    color: white;
 }
-
-.tabs > p:is(:nth-child(1), :hover ) {
+.description a:hover {
     border-bottom: 3px solid var(--primary-clr);
-    
+
+}
+.description > p {
+    font-size: 8px;
 }
 
-.amount{
+.details a {
+    border-bottom: 3px solid var(--secondary-clr);
+    text-decoration: none;
+    color: white;
+}
+.details a:hover {
+    border-bottom: 3px solid var(--primary-clr);
+
+}
+
+.comments a {
+    border-bottom: 3px solid var(--secondary-clr);
+    text-decoration: none;
+    color: white;
+}
+.comments a:hover {
+    border-bottom: 3px solid var(--primary-clr);
+
+}
+
+
+
+.amount {
     justify-content: space-evenly;
     min-width: 0.5rem;
 }
 
-.color, .quantity, .total-price{
+.color,
+.quantity,
+.total-price {
     display: inline-flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.color-shcheme{
+.color-shcheme {
     background: var(--secondary-clr);
     border-radius: 25px;
     width: 35px;
@@ -139,13 +179,13 @@ h1{
     justify-content: space-around;
 }
 
-.color-shcheme > div{
+.color-shcheme > div {
     background: var(--primary-clr);
     border-radius: 50px;
     width: 15px;
 }
 
-.color-shcheme > button{
+.color-shcheme > button {
     background: transparent;
     border: none;
     cursor: pointer;
@@ -153,7 +193,7 @@ h1{
     /* width: 15px; */
 }
 
-.quantity-amount{
+.quantity-amount {
     background: var(--secondary-clr);
     border-radius: 25px;
     width: 50px;
@@ -163,14 +203,14 @@ h1{
 }
 
 
-.quantity-amount > button{
+.quantity-amount>button {
     background: transparent;
     border: none;
     cursor: pointer;
-    
+
 }
 
-.amount-per-quantity{
+.amount-per-quantity {
     background: var(--secondary-clr);
     display: inline-flex;
     justify-content: center;
@@ -179,7 +219,7 @@ h1{
     padding: 3px 0;
 }
 
-.button{
+.button {
     background: transparent;
     color: white;
     cursor: pointer;
